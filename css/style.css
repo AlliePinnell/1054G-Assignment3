@@ -65,14 +65,13 @@ h2 {
 	margin-top: -70px;
 	margin-left: 50px;
 }
-
-left-panel {
+.left-panel {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-left: 420px;
 }
-left-panel p {
+.left-panel p {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
 	color: #532603;
@@ -84,34 +83,34 @@ left-panel p {
 	transition: all 0.2s;
 	text-align-last: center;
 }
-left-panel span {
+.left-panel span {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
 	color: yellow;
 	text-shadow: -2px -2px 0 #532603, 1px -1px 0 #532603, -1px 1px 0 #532603,
 		1px 1px 0 #532603;
 }
-left-panel img {
+.left-panel img {
 	transform: scale(0.25) rotate(-3deg);
 	margin-top: -610px;
 	opacity: 0.7;
 }
-left-panel img:hover,
-right-panel img:hover {
+.left-panel img:hover,
+.right-panel img:hover {
 	opacity: 1;
 }
-left-panel p:hover {
+.left-panel p:hover {
 	transform: rotate(-5deg);
 	transition: all 0.2s;
 }
 
-right-panel {
+.right-panel {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-left: -420px;
 }
-right-panel p {
+.right-panel p {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
 	color: #532603;
@@ -124,23 +123,23 @@ right-panel p {
 	text-align-last: left;
 	text-align-last: center;
 }
-right-panel span {
+.right-panel span {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
 	color: yellow;
 	text-shadow: -2px -2px 0 #532603, 1px -1px 0 #532603, -1px 1px 0 #532603,
 		1px 1px 0 #532603;
 }
-right-panel img {
+.right-panel img {
 	transform: scale(0.25) rotate(3deg);
 	margin-top: -610px;
 	opacity: 0.7;
 }
-right-panel p:hover {
+.right-panel p:hover {
 	transform: rotate(5deg);
 }
 
-nutritional-facts {
+.nutritional-facts {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
@@ -152,17 +151,17 @@ nutritional-facts {
 	font-size: 150%;
 }
 
-nutritional-facts a {
+.nutritional-facts a {
 	align-self: center;
 	font-size: 200%;
 	color: black;
 }
 
-nutritional-facts a:hover {
+.nutritional-facts a:hover {
 	color: rgb(130, 130, 130);
 }
 
-nutritional-facts line {
+.nutritional-facts line {
 	background-color: black;
 	width: 100%;
 	margin-top: 1%;
@@ -177,13 +176,8 @@ nutritional-facts line {
 .footSpace {
 	display: flex;
 	justify-content: space-between;
-}
-nutritional-facts p {
-	margin: 0;
-}
-
-nutritional-facts span {
-	margin: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 footer {
