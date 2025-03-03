@@ -182,7 +182,6 @@ h2 {
 
 footer {
 	margin-top: 10%;
-	background-color: #4e0000;
 	color: white;
 }
 
@@ -255,14 +254,22 @@ button:hover {
 	transition: all 0.2s;
 }
 
-.extra {
+/* .extra {
 	background-image: url("../img/ad.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: left;
+} */
+.extra video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .footerOverlay {
 	background-color: rgba(78, 0, 0, 0.7);
+	position: relative;
 }
