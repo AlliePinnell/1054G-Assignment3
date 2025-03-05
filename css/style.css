@@ -29,17 +29,11 @@ html {
 	background: linear-gradient(to right, #ff630f, #ff5800, #862f00);
 }
 
-body {
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
-}
-
 h1 {
 	/* Applies the custom font to the title */
 	font-family: "Reese", sans-serif;
 	/* Sets the font size */
-	font-size: 1500%;
+	font-size: 15em;
 	/* Sets the text color */
 	color: yellow;
 	text-shadow: -10px 0px 0 #532603, -5px 5px 0 #532603, 0px 0px 0 #532603,
@@ -47,29 +41,19 @@ h1 {
 	/* Aligns the text to the center */
 	text-align: center;
 	/* Adds shadow effects to the text */
-	margin-top: 5%;
+	margin: 5%;
+}
+h1 span {
+	font-size: 50%;
 }
 
-h2 {
-	/* Applies the custom font to the title */
-	font-family: "Reese", sans-serif;
-	/* Sets the font size */
-	font-size: 450%;
-	/* Sets the text color */
-	color: yellow;
-	text-shadow: -5px 0px 0 #532603, -5px 3px 0 #532603, 0px 0px 0 #532603,
-		0px 0px 0 #532603;
-	/* Aligns the text to the center */
-	text-align: center;
-	/* Adds shadow effects to the text */
-	margin-top: -70px;
-	margin-left: 50px;
-}
-.left-panel {
+.left-panel,
+.right-panel {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	margin-left: 420px;
+	justify-content: center;
+	margin: 2%;
 }
 .left-panel p {
 	font-family: "Britannic", sans-serif;
@@ -78,38 +62,33 @@ h2 {
 	text-shadow: -2px -2px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
 		1px 1px 0 yellow;
 	transform: rotate(5deg);
-	margin-top: -490px;
-	margin-left: -700px;
 	transition: all 0.2s;
-	text-align-last: center;
+	width: 20%;
+	text-align: center;
 }
-.left-panel span {
+.left-panel span,
+.right-panel span {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
 	color: yellow;
 	text-shadow: -2px -2px 0 #532603, 1px -1px 0 #532603, -1px 1px 0 #532603,
 		1px 1px 0 #532603;
+	display: block;
 }
 .left-panel img {
-	transform: scale(0.25) rotate(-3deg);
-	margin-top: -610px;
+	transform: rotate(-3deg);
 	opacity: 0.7;
 }
 .left-panel img:hover,
 .right-panel img:hover {
 	opacity: 1;
+	transition: all 0.2s;
 }
 .left-panel p:hover {
 	transform: rotate(-5deg);
 	transition: all 0.2s;
 }
 
-.right-panel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: -420px;
-}
 .right-panel p {
 	font-family: "Britannic", sans-serif;
 	font-size: 200%;
@@ -117,43 +96,33 @@ h2 {
 	text-shadow: -2px -2px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
 		1px 1px 0 yellow;
 	transform: rotate(-5deg);
-	margin-top: -490px;
-	margin-left: 700px;
 	transition: all 0.2s;
-	text-align-last: left;
-	text-align-last: center;
+	width: 20%;
+	text-align: center;
 }
-.right-panel span {
-	font-family: "Britannic", sans-serif;
-	font-size: 200%;
-	color: yellow;
-	text-shadow: -2px -2px 0 #532603, 1px -1px 0 #532603, -1px 1px 0 #532603,
-		1px 1px 0 #532603;
-}
+
 .right-panel img {
-	transform: scale(0.25) rotate(3deg);
-	margin-top: -610px;
+	transform: rotate(3deg);
 	opacity: 0.7;
 }
 .right-panel p:hover {
 	transform: rotate(5deg);
+	transition: all 0.2s;
 }
-
 .nutritional-facts {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-	margin-top: 150px;
 	margin-left: 30%;
 	margin-right: 30%;
-	padding: 20px;
+	padding: 2%;
 	font-family: "FranklinGothic", "Arial Narrow", Arial, sans-serif;
 	font-size: 150%;
 }
 
 .nutritional-facts a {
 	align-self: center;
-	font-size: 200%;
+	font-size: 2em;
 	color: black;
 }
 
@@ -161,7 +130,7 @@ h2 {
 	color: rgb(130, 130, 130);
 }
 
-.nutritional-facts line {
+.nutritional-facts .line {
 	background-color: black;
 	width: 100%;
 	margin-top: 1%;
@@ -176,30 +145,34 @@ h2 {
 .footSpace {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 1%;
 	padding-bottom: 1%;
 }
 
 footer {
-	margin-top: 10%;
+	margin-top: -0.15%;
 	color: white;
 }
 
 .footSpace h1 {
-	font-size: 900%;
+	font-size: 20em;
 	text-shadow: none;
 	color: white;
-	margin-top: 0%;
-	margin-left: 3%;
+	margin-left: 2%;
+	margin-top: -5%;
 }
 
-.footSpace h2 {
+.footSpace h2, .footSpace a {
 	font-family: "FranklinGothic", "Arial Narrow", Arial, sans-serif;
-	font-size: 200%;
+	font-size: 2em;
 	text-shadow: none;
 	color: white;
-	margin-top: 3%;
-	margin-right: 3%;
+	margin: 2%;
+}
+
+.footSpace a:hover {
+	color: yellow;
+	font-size: 2.4em;
+	transition: all 0.2s;
 }
 
 form {
@@ -209,7 +182,7 @@ form {
 	margin-right: 10%;
 	margin-top: 20%;
 	font-family: "Reese", sans-serif;
-	font-size: 500%;
+	font-size: 5em;
 }
 
 input,
@@ -217,12 +190,11 @@ textarea,
 select {
 	font-family: "FranklinGothic", "Arial Narrow", Arial, sans-serif;
 	background-color: #650000; /* Set background color */
-	font-size: 20px; /* Set font size */
+	font-size: 0.3em; /* Set font size */
 	color: rgb(255, 255, 255); /* Set text color */
-	padding: 10px; /* Set padding */
 	border-color: rgb(255, 0, 0);
-	border-width: 10px;
-	border-radius: 100px;
+	border-width: 0.5em;
+	border-radius: 10em;
 }
 
 input:hover,
@@ -230,23 +202,22 @@ textarea:hover,
 select:hover {
 	font-family: "FranklinGothic", "Arial Narrow", Arial, sans-serif;
 	background-color: orange; /* Set background color */
-	font-size: 20px; /* Set font size */
+	font-size: 0.3em; /* Set font size */
 	color: black; /* Set text color */
-	padding: 10px; /* Set padding */
 	border-color: rgb(255, 196, 0);
-	border-width: 10px;
-	border-radius: 100px;
+	border-width: 0.7em;
+	border-radius: 10em;
 	transition: all 0.2s;
 }
 button {
 	font-family: "Reese", sans-serif;
 	background-color: #650000; /* Set background color */
-	font-size: 50px; /* Set font size */
+	font-size: 0.7em; /* Set font size */
 	color: rgb(255, 255, 255); /* Set text color */
-	padding: 10px; /* Set padding */
+	padding: 3%; /* Set padding */
 	border-color: rgb(255, 0, 0);
-	border-width: 10px;
-	border-radius: 40px;
+	border-width: 0.2em;
+	border-radius: 10em;
 }
 button:hover {
 	background-color: orange; /* Set background color */
@@ -254,13 +225,6 @@ button:hover {
 	transition: all 0.2s;
 }
 
-/* .extra {
-	background-image: url("../img/ad.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: left;
-} */
 .extra video {
 	position: absolute;
 	width: 100%;
@@ -272,4 +236,8 @@ button:hover {
 .footerOverlay {
 	background-color: rgba(78, 0, 0, 0.7);
 	position: relative;
+}
+
+.svgImage {
+	margin-top: -0.5%;
 }
